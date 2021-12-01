@@ -88,15 +88,18 @@
                 }
                     
                 if($tipoElemento === "paragrafo"){
-                    ?><p><?php echo $dato?></p>
+                    ?><p><?php echo $dato; ?></p><?php
                 }
-    
+                
+                if ($tipoElemento === "sottotitolo"){
+                    ?><h2><?php echo $dato; ?></h2><?php
+                }
 
-               
+                if ($tipoElemento === "sottoparagrafo"){
+                    ?><p><?php echo $dato; ?></p><?php
+                }  
             }
         }
-
-
         ?>
     </main>
 </body>
